@@ -1,23 +1,60 @@
 aid: anxiatechnology
+
 name: Anxiatechnology
-description: 'Anxiatechnology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Anxiatechnology is a Shenzhen‑based technology company specializing in facial‑recognition attendance and access‑control solutions. Their product line includes turnstile gates, face‑recognition time‑attendance systems, and integrated access‑control devices that combine facial, ID‑card, and temperature monitoring technologies. The firm emphasizes high‑precision AI‑driven recognition, CE and ISO9000 certifications, and cost‑effective manufacturing for enterprise security deployments across various sectors.'
+
 url: https://raw.githubusercontent.com/api-evangelist/anxiatechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- FacialRecognition
+- AccessControl
+- AI
+- Security
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/anxiatechnology-hosts.yml
+- type: Vendors
+  url: vendors/anxiatechnology-vendors.yml
+- type: DomainSecurity
+  url: security/anxiatechnology-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/anxiatechnology
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Could not locate any machine‑readable API contract; attempts to reach a presumed company domain failed.
+  evidence:
+    - url: https://anxiatechnology.com
+      status: unreachable
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
